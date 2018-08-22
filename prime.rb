@@ -1,7 +1,7 @@
 def prime?(num)
   array = (2..num).to_a
   array.detect do |number|
-    if (num % number).is_a? Integer && !1
+    if (num % number).is_an_int && !1
       true
     end
     false
