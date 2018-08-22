@@ -1,9 +1,9 @@
 def prime?(num)
   array = (2..num).to_a
   array.detect do |number|
-    if (num % number).is_a? Integer
-      false
+    if (num % number).is_a? Integer && !1
+      true
     end
-    true
+    false
   end
 end
