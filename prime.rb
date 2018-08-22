@@ -4,5 +4,6 @@ def prime?(num)
     if (num % number).is_a? Integer
       false
     end
+    true
   end
 end
