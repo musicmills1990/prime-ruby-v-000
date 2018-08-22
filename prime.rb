@@ -1,12 +1,12 @@
 def prime?(num)
   array = (2..num.to_f).to_a
   array.collect do |number|
-    if (num / number).is_a? Integer &&  !((num / number) == 1)
+    if (num.to_f / number).is_a? Integer &&  !((num.to_f / number) == 1)
       false
     else
       true
     end
-    end  
+    end
 end
 
 
