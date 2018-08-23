@@ -1,13 +1,12 @@
 def prime?(num)
+if num < 2
+  return false
+end
   array = (2..num-1).to_a
-  array.collect do |number|
-    num / number
-    end
-  array.detect do |number|
-    if number.is_a? Integer
-      false
-    else
-      true
-    end
+  array.each do |number|
+  if num % number == 0
+    return false
   end
+end
+  return true
 end
