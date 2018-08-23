@@ -4,10 +4,10 @@ def prime?(num)
     num / number
     end
   array.detect do |number|
-    !(number.is_a? Integer)
+    if number.is_a? Integer
+      false
+    else
+      true
+    end
   end
 end
-
-
-
-#so if your array is 2..23 because your number is 23, then 23/2 is NOT an integer 23/3 is NOT an integer
