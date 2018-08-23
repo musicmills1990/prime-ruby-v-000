@@ -6,7 +6,7 @@ def prime?(num)
     end
   #if array (after the collect iterators run on it) has all numbers as non-integers except for 1, then it's a prime number.
   array.detect do |number|
-    number.is_a? non-integers  
+    number.is_a? non-integers
   end
 end
 
