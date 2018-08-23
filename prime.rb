@@ -1,12 +1,10 @@
 def prime?(num)
   array = (2..num-1).to_a
-  #example (2..8) should be [2,3,4,5,6,7]
   array.collect do |number|
     num / number
     end
-  #if array (after the collect iterators run on it) has all numbers as non-integers except for 1, then it's a prime number.
   array.detect do |number|
-    number.is_a? non-integers
+    !(number.is_a? Integer)
   end
 end
 
